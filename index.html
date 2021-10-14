@@ -412,13 +412,87 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal> -->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="button-close" data-modal-close>
           <svg class="icon icon-close">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="callback-title">Оставьте свои данные, мы Вам перезвоним</p>
+        <form class="callback-form" autocomplete="off">
+          <div class="form-field">
+            <label class="callback-label" for="username"> Имя </label>
+            <span class="input-wrapper">
+              <input
+                type="text"
+                name="username"
+                required
+                minlength="3"
+                maxlength="15"
+                id="username"
+                class="callback-input"
+              />
+              <svg class="callback-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="form-field">
+            <label class="callback-label" for="telephone">Телефон </label>
+            <span class="input-wrapper">
+              <input
+                type="tel"
+                name="telephone"
+                required
+                id="telephone"
+                class="callback-input"
+              />
+              <svg class="callback-icon">
+                <use href="./images/icons.svg#icon-telephone"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="form-field">
+            <label class="callback-label" for="email">Почта </label>
+            <span class="input-wrapper">
+            <input
+              type="mail"
+              name="email"
+              required
+              id="email"
+              class="callback-input"
+            />
+            <svg class="callback-icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label class="callback-label" for="comment">Комментарий</label>
+          <textarea
+            class="callback-comment"
+            placeholder="Введите текст"
+          ></textarea>
+          <input
+            type="checkbox"
+            name="modal-checkbox"
+            id="modal-checkbox"
+            class="callback-checkbox visually-hidden"
+          />
+          <label class="modal-checkbox-label" for="modal-checkbox"
+            >
+            <span>
+             <svg class="check-icon">
+              <use href="./images/icons.svg#icon-checked"></use>
+            </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю
+            <a href="dd#" class="modal-link">Условия договора</a></label
+          >
+          <button type="submit" class="btn accent-btn callback-button">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
