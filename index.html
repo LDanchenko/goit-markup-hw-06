@@ -448,6 +448,9 @@
                 required
                 id="telephone"
                 class="callback-input"
+                pattern="[\+]\d{12}"
+                minlength="13"
+                maxlength="13"
               />
               <svg class="callback-icon">
                 <use href="./images/icons.svg#icon-telephone"></use>
@@ -455,23 +458,27 @@
             </span>
           </div>
           <div class="form-field">
-            <label class="callback-label" for="email">Почта </label>
+            <label class="callback-label" for="mail">Почта </label>
             <span class="input-wrapper">
-            <input
-              type="mail"
-              name="email"
-              required
-              id="email"
-              class="callback-input"
-            />
-            <svg class="callback-icon">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+              <input
+                type="email"
+                name="email"
+                required
+                id="mail"
+                class="callback-input"
+                minlength="7"
+                maxlength="30"
+              />
+              <svg class="callback-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </span>
           </div>
           <label class="callback-label" for="comment">Комментарий</label>
           <textarea
             class="callback-comment"
             placeholder="Введите текст"
+            id="comment"
           ></textarea>
           <input
             type="checkbox"
@@ -479,15 +486,14 @@
             id="modal-checkbox"
             class="callback-checkbox visually-hidden"
           />
-          <label class="modal-checkbox-label" for="modal-checkbox"
-            >
+          <label class="modal-checkbox-label" for="modal-checkbox">
             <span>
-             <svg class="check-icon">
-              <use href="./images/icons.svg#icon-checked"></use>
-            </svg>
+              <svg class="check-icon">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю
-            <a href="dd#" class="modal-link">Условия договора</a></label
+            Соглашаюсь с рассылкой и принимаю&nbsp;
+            <a href="#" class="modal-link">Условия договора</a></label
           >
           <button type="submit" class="btn accent-btn callback-button">
             Отправить

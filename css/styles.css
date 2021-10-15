@@ -796,6 +796,7 @@ body {
 
 .modal-link {
   color: var(--accent-color);
+  text-decoration-skip-ink: none;
 }
 
 .modal-checkbox-label span {
