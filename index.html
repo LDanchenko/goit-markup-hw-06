@@ -410,10 +410,29 @@
             </li>
           </ul>
         </div>
+        <div class="page-footer-block">
+          <form>
+            <label class="subscribe-label" for="subscribe"
+              >Подпишитесь на рассылку</label
+            >
+            <input
+              type="email"
+              name="email"
+              required
+              id="subscribe"
+              class="subscribe-input"
+              minlength="7"
+              maxlength="30"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn accent-btn subscribe-button">
+              Подписаться
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal> -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button-close" data-modal-close>
           <svg class="icon icon-close">
