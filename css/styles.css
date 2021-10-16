@@ -609,7 +609,7 @@ body {
   margin-right: 70px;
 }
 .page-footer-block:nth-child(2) {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .page-footer-block .social-links {
@@ -762,6 +762,11 @@ body {
   color: white;
 }
 
+.subscribe-input:not(:placeholder-shown) {
+  border-color: var(--accent-color);
+  color: white;
+}
+
 .form-field {
   margin-bottom: 10px;
 }
@@ -849,7 +854,8 @@ body {
   align-items: center;
   justify-content: center;
   transition: background-color var(--transition-duration)
-    var(--transition-time-function);
+      var(--transition-time-function),
+    border-color var(--transition-duration) var(--transition-time-function);
 }
 
 .check-icon {
@@ -860,6 +866,10 @@ body {
 .callback-checkbox:checked + .modal-checkbox-label span {
   background-color: var(--accent-color);
   border: none;
+}
+
+.modal-checkbox-label span {
+  cursor: pointer;
 }
 
 .subscribe-label {
