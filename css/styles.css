@@ -666,6 +666,7 @@ body {
 .icon-close {
   width: 11px;
   height: 11px;
+  transition: fill var(--transition-duration) var(--transition-time-function);
 }
 
 .button-close {
@@ -680,6 +681,10 @@ body {
   margin-right: 8px;
   margin-top: 8px;
   cursor: pointer;
+}
+
+.button-close:focus .icon-close {
+  fill: var(--accent-color);
 }
 
 .portfolio-item-thumb {
@@ -731,6 +736,8 @@ body {
   padding-left: 42px;
   padding-right: 20px;
   outline: none;
+  transition: border-color var(--transition-duration)
+    var(--transition-time-function);
 }
 
 .subscribe-input {
@@ -768,6 +775,8 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
+  transition: border-color var(--transition-duration)
+    var(--transition-time-function);
 }
 
 .callback-comment::placeholder {
@@ -775,6 +784,10 @@ body {
   letter-spacing: 0.01em;
   line-height: 1.167;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.callback-comment:focus {
+  border-color: var(--accent-color);
 }
 
 .form-checkbox {
@@ -810,6 +823,7 @@ body {
   left: 12px;
   transform: translateY(-50%);
   top: 50%;
+  transition: fill var(--transition-duration) var(--transition-time-function);
 }
 
 .callback-input:focus + .callback-icon {
