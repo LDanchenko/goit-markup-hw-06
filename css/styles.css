@@ -683,7 +683,8 @@ body {
   cursor: pointer;
 }
 
-.button-close:focus .icon-close {
+.button-close:focus .icon-close,
+.button-close:hover .icon-close {
   fill: var(--accent-color);
 }
 
@@ -870,6 +871,10 @@ body {
 
 .modal-checkbox-label span {
   cursor: pointer;
+}
+
+.modal-checkbox-label:hover span {
+  border: 1.8px solid var(--accent-color);
 }
 
 .subscribe-label {
