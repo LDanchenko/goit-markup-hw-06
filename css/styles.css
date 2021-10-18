@@ -873,7 +873,8 @@ body {
   cursor: pointer;
 }
 
-.modal-checkbox-label:hover span {
+.modal-checkbox-label:hover span,
+.callback-checkbox:focus + .modal-checkbox-label span {
   border: 1.8px solid var(--accent-color);
 }
 
